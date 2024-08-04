@@ -17,7 +17,7 @@ const Provider = ({ children }: { children: React.ReactNode }) => {
         const users = await getClerkUser({ userIds });
         return users;
       }}
-      resolveMentionSuggestions={async ({text, roomId}) => {
+      resolveMentionSuggestions={async ({ text, roomId }) => {
         const roomUsers= await getDocumentUsers({roomId, currentUser: clerkUser.user?.emailAddresses[0].emailAddress!, text});
       }}
     >
