@@ -1,11 +1,11 @@
-# Google Docs Clone
+<h1 style="color: green;">Google Docs Clone</h1>
 <div style="border-top: 2px solid blue;"></div>
 
 A web-based document editor that replicates the core features of Google Docs, including real-time collaboration, document storage, and sharing permissions.
 
-<a href="https://sway-docs.vercel.app/" target="_blank"  >Live Demo</a>
+<a href="https://sway-docs.vercel.app/" target="_blank">Live Demo</a>
 
-## Features
+<h2>Features</h2>
 <div style="border-top: 2px solid blue;"></div>
 
 - **Real-time Collaboration:** Multiple users can edit the same document simultaneously, with changes instantly visible to all participants.
