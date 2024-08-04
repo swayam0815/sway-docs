@@ -3,7 +3,7 @@
 
 A web-based document editor that replicates the core features of Google Docs, including real-time collaboration, document storage, and sharing permissions.
 
-[**Live Demo**](https://swayam-two.vercel.app/)
+[**Live Demo**](https://swayam-two.vercel.app/){:target="_blank"}
 
 ## Features
 <div style="border-top: 2px solid blue;"></div>
