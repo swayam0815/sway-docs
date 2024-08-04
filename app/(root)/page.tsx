@@ -51,10 +51,10 @@ const page = async () => {
                 >
                   <div className="hidden rounded-md bg-[#5fffa7] border-2  border-emerald-500 p-2 sm:block">
                     <Image
-                      src={`/assets/icons/doc.svg`}
+                      src={`/assets/icons/doc.png`}
                       alt="document"
-                      width={40}
-                      height={40}
+                      width={50}
+                      height={50}
                     />
                   </div>
                   <div className="space-y-1  w-52 ">
