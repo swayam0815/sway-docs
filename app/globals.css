@@ -53,6 +53,11 @@
     @apply w-full max-w-[400px] rounded-xl border-none bg-doc bg-cover px-5 py-7 shadow-xl sm:min-w-[500px] !important;
   }
 
+  .animate-ping-fast {
+    @apply animate-ping;
+    animation-duration: 5s; /* Adjust the duration as needed */
+  }
+
   .shad-dialog button {
     @apply focus:ring-0 focus:ring-offset-0 focus-visible:border-none focus-visible:outline-none focus-visible:ring-transparent focus-visible:ring-offset-0 !important;
   }
@@ -66,15 +71,15 @@
   }
 
   .shad-select-item {
-    @apply cursor-pointer bg-dark-200 text-blue-100 focus:bg-dark-300 hover:bg-dark-300 focus:text-blue-100 !important;
+    @apply cursor-pointer bg-black text-blue-100 focus:bg-black hover:bg-black focus:text-blue-100 !important;
   }
 
   .shad-popover {
-    @apply w-[460px] border-none bg-dark-200 shadow-lg !important;
+    @apply w-[460px] border-none bg-black shadow-lg !important;
   }
 
   .floating-toolbar {
-    @apply flex w-full min-w-max items-center justify-center gap-2 rounded-lg bg-dark-350 p-1.5 shadow-xl;
+    @apply flex w-full min-w-max items-center justify-center gap-2 rounded-lg bg-black p-1.5 shadow-xl;
   }
 
   .floating-toolbar-btn {
@@ -82,7 +87,7 @@
   }
 
   .toolbar-wrapper {
-    @apply z-50 custom-scrollbar w-screen overflow-auto border-y border-dark-300 bg-dark-100 pl-3 pr-4 shadow-sm;
+    @apply z-50 custom-scrollbar w-screen overflow-auto border-y border-dark-300 bg-black pl-3 pr-4 shadow-sm;
   }
 
   .editor-wrapper {
@@ -90,7 +95,7 @@
   }
 
   .header {
-    @apply min-h-[92px] min-w-full flex-nowrap bg-dark-100 flex w-full items-center justify-between gap-2 px-4;
+    @apply min-h-[92px] min-w-full flex-nowrap bg-black flex w-full items-center justify-between gap-2 px-4;
   }
 
   .document-list-container {
@@ -102,11 +107,14 @@
   }
 
   .document-list-item {
-    @apply flex items-center justify-between gap-4 rounded-lg bg-doc bg-cover p-5 shadow-xl;
+    @apply flex items-center justify-between gap-4 rounded-lg bg-[#9fffcb] text-black bg-cover p-5 shadow-xl;
   }
 
+  .share-btn{
+    @apply bg-[#9fffcb]  items-center justify-center hover:text-gray-700 rounded-xl hover:bg-[#5fffa7] transition-all   text-black flex gap-1 shadow-md ;
+  }
   .document-list-empty {
-    @apply flex w-full max-w-[730px] flex-col items-center justify-center gap-5 rounded-lg bg-dark-200 px-10 py-8;
+    @apply flex w-full max-w-[730px] flex-col items-center justify-center gap-5 rounded-lg  px-10 py-8;
   }
 
   .document-title-input {
@@ -118,7 +126,7 @@
   }
 
   .view-only-tag {
-    @apply rounded-md bg-dark-400/50 px-2 py-0.5 text-xs text-blue-100/50;
+    @apply rounded-md bg-black/50 px-2 py-0.5 text-xs text-blue-100/50;
   }
 
   .collaborators-list {
@@ -126,7 +134,7 @@
   }
 
   .share-input {
-    @apply h-11 flex-1 border-none bg-dark-400 focus-visible:ring-0 focus-visible:ring-offset-0 !important;
+    @apply h-11 flex-1 border-none bg-black focus-visible:ring-0 focus-visible:ring-offset-0 !important;
   }
 
   .remove-btn {
@@ -138,11 +146,11 @@
   }
 
   .comment-composer {
-    @apply w-full max-w-[800px] border border-dark-300 bg-dark-200 shadow-sm lg:w-[350px];
+    @apply w-full max-w-[800px] border border-dark-300 bg-black shadow-sm lg:w-[350px];
   }
 
   .comment-thread {
-    @apply w-full max-w-[800px] border border-dark-300 bg-dark-200 shadow-sm lg:w-[350px] transition-all;
+    @apply w-full max-w-[800px] border border-dark-300 bg-black shadow-sm lg:w-[350px] transition-all;
   }
 
   .loader {

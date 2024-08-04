@@ -6,7 +6,6 @@ import { userInfo } from "os";
 
 export async function POST(request: Request) {
   const clerkUser = await currentUser();
-  // Get the current user from your database
   if (!clerkUser) {
     redirect("/sign-in");
   }
