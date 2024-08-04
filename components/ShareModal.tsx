@@ -16,6 +16,8 @@ import Peeps from "./Peeps";
 import { useSelf } from "@liveblocks/react/suspense";
 import { updateDocumentAccess } from "@/lib/actions/room.actions";
 import { type } from "os";
+import { FaShare } from "react-icons/fa";
+
 
 const ShareModal = ({
   roomId,
@@ -47,11 +49,19 @@ const ShareModal = ({
           <Dialog open={open} onOpenChange={setOpen}>
             <DialogTrigger>
               <Button
-                className="share-btn flex h-9 gap-1 px-4"
+                className=" flex h-9 gap-1 px-4 group/modal-btn relative overflow-hidden justify-center share-btn"
                 disabled={currentUserType !== "editor"}
                 onClick={shareDocumentHandler}
               >
-                <p className="mr-1 hidden sm:block">Share.</p>
+              <div className="flex justify-center ">
+              <span className="group-hover/modal-btn:translate-x-40 text-center transition duration-500 ">
+                  Book your flight
+                </span>
+                <div className="-translate-x-40 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
+                <FaShare className="fill-black"/>
+
+                </div>
+              </div>
               </Button>
             </DialogTrigger>
             <DialogContent className="fixed left-[50%] top-[50%] z-50 w-full max-w-lg translate-x-[-50%] translate-y-[-50%] p-6 bg-black  border-[#9fffcb] border-2 rounded-lg">
